@@ -14,9 +14,10 @@ def main(message):
 def help(message):
     bot.send_message(message.chat.id, '<b>Помощь с использованием:</b>\n' +
                     'Список команд\n' +
-                    '<i>\start</i> - начать пользоваться ботом\n' +
-                    '<i>\site</i> - открыть ссылку на мой сайт (allArticles)\n' +
-                    '<i>\help</i> - помощь в навигации по боту', parse_mode='html')
+                    '<i>/start</i> - начать пользоваться ботом\n' +
+                    '<i>/site</i> - открыть ссылку на мой сайт (allArticles)\n' +
+                    '<i>/id</i> - узнать ваш id в Telegram\n' +
+                    '<i>/help</i> - помощь в навигации по боту', parse_mode='html')
 
 # Перекидывает на мой сайт
 @bot.message_handler(commands=['site', 'website', 'сайт', 'вебсайт', 'веб-сайт'])
