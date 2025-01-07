@@ -2,7 +2,9 @@
 import telebot
 import webbrowser
 
-bot = telebot.TeleBot('7683114432:AAFVvcorMdZ9vRRes8VIhkME0esyXjb8uCk')
+from config import TOKEN
+
+bot = telebot.TeleBot(TOKEN)
 
 # Start
 @bot.message_handler(commands=['hello', 'start', 'привет', 'старт']) # можно добавить несколько команд
